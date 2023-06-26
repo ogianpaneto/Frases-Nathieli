@@ -16,18 +16,23 @@
 </head>
 <body>
     
-    <div class="flex flex-col max-w-100% min-h-screen place-items-center place-content-center bg-gray-800">
-        <div>
+    <div class="flex flex-col max-w-100% min-h-screen place-content-center bg-gray-800">
+        <div class="self-center">
             <img class="w-60" src="/img/minions.png" alt="">
             <button id="btnNovaFrase" onclick="fnFrase(), audio.play()" class="text-purple-800 bg-yellow-400 border-b-4 border-yellow-600 hover:border-purple-900 active:border-b-0 px-8 py-5 uppercase tracking-widest hover:bg-purple-600 hover:text-yellow-500 disabled:bg-red-500 disabled:border-b-red-700 disabled:text-red-950">Frases da Nathieli</button>
         </div>
 
-        <div>
-            <h1 id="textoFrase" class="text-white m-10"></h1>
+        <div class="self-center">
+            <h1 id="textoFrase" class="text-white mt-10"></h1>
+            
+            <div class=" text-right w-auto">
+                <h1 id="autoria" class="text-white"></h1>
+            </div>
+    
         </div>
 
-        <div class="">
-            <button class="text-yellow-400" onclick="copyElementText('textoFrase')" id="btnCopy"></button>
+        <div class="self-center">
+            <button class="text-yellow-400 mt-10" onclick="copyElementText('textoFrase')" id="btnCopy"></button>
         </div>
     </div>
 

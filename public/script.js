@@ -1,9 +1,14 @@
 
 const frases = [
-    'aiai',
-    'uiuiui',
-    'cala a bocaaaaaa',
-    'pilaaantra'
+    '"Eu espero que na próxima reencarnação eu nasça com uma rolona no meio das pernas."',
+    '"Jesus é da galera."',
+    '"Na minha cabeça, homem não precisa ser inteligente."',
+    '"É engraçado que lá no Japão eles passavam fome."',
+    '"Açúcar é o caralho, mamãe me passou pimenta."',
+    '"A esperança me irrita."',
+    '"Tem um pênis com meu nome."',
+    '"Eu engasguei com o pirulito na boca."',
+    '"Nascer com pai pobre é destino, casar com homem pobre é burrice."'
 ] 
 
 function getRandomInt(max) {
@@ -31,6 +36,7 @@ function fnFrase(){
 
     current.innerHTML = frases[num]
     document.getElementById("btnCopy").innerHTML = 'COPIAR FRASE'
+    document.getElementById("autoria").innerHTML = '- Raasch Nathieli'
 }
 
 function copyElementText(id) {
